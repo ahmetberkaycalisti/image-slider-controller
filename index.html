@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+</head>
+<body>
+    <div class="content">
+        <div class="images">
+            <img src="https://images.unsplash.com/photo-1632491093482-8370c2bf84c8?w=1470&q=80" alt="">
+            <img src="https://images.unsplash.com/photo-1630622253599-98c7fec9bbe6?w=1170&q=80" alt="">
+            <img src="https://images.unsplash.com/photo-1626193770670-7153d4034137?w=1470&q=80" alt="">
+            <img src="https://images.unsplash.com/photo-1571887747018-948297fd9126?w=1470&q=80" alt="">
+            <img src="https://images.unsplash.com/photo-1559446115-5337c65331f8?w=1528&q=80" alt="">
+        </div>
+        <div onclick="side_slide(-1)" class="slide left">
+            <span class="fas fa-angle-left"></span>
+        </div>
+        <div onclick="side_slide(1)" class="slide right">
+            <span class="fas fa-angle-right"></span>
+        </div>
+        <div class="btn-sliders">
+            <span onclick="btn_slide(1)"></span>
+            <span onclick="btn_slide(2)"></span>
+            <span onclick="btn_slide(3)"></span>
+            <span onclick="btn_slide(4)"></span>
+            <span onclick="btn_slide(5)"></span>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
